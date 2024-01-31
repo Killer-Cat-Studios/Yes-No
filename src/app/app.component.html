@@ -3,15 +3,17 @@
     <div class="card-box">
       <mat-card class="card-main">
         <mat-card-content>
-          <button mat-fab class="btn yes-btn" aria-label="Yes" (click)="playYes();">
-            Y
-          </button>
-          <button mat-fab class="btn no-btn" aria-label="No" (click)="playNo();">
-            N
-          </button>
+          <button mat-fab class="btn yes-btn" aria-label="Yes" (click)="playYes();">Y</button>
+          <button mat-fab class="btn no-btn" aria-label="No" (click)="playNo();">N</button>
         </mat-card-content>
       </mat-card>
     </div>
   </div>
+  <footer>
+    <img class="icon footer-icon" src="../assets/images/KillerCatLogo.jpg" />
+    <p>
+      &copy; {{ year }} Killer Cat Studios
+    </p>
+  </footer>
 </main>
 <router-outlet />

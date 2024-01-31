@@ -13,7 +13,12 @@ import { RouterOutlet } from '@angular/router';
 })
 export class AppComponent {
   private audio!: HTMLAudioElement;
+  year: number;
   title = 'Yes-No Button';
+
+  constructor() {
+    this.year = new Date().getFullYear();
+  }
 
   playYes() {
     this.audio = new Audio();
